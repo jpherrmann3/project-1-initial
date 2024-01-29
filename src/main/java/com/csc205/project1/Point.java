@@ -33,6 +33,12 @@ public class Point {
         this.y = y;
     }
 
+    // Default constructor
+    public Point() {
+        this.x = 0.0;
+        this.y = 0.0;
+    }
+
     // Standard setters
     public void setX(double x) {
         this.x = x;
@@ -100,6 +106,9 @@ public class Point {
 
         point1.rotate(Math.PI / 2); // Rotating by 90 degrees
         System.out.println("Rotated Point: (" + point1.getX() + ", " + point1.getY() + ")");
+
+        Point point3 = new Point();
+        System.out.println("Original Point: (" + point3.getX() + ", " + point3.getY() + ")");
     }
 }
 
