@@ -2,6 +2,27 @@ package com.csc205.project1;
 
 import java.lang.Math;
 
+// Leveraging OpenAI for code completion.
+// Link to the chat log: https://chat.openai.com/share/9f89fb0d-e6a1-4aa6-b1cd-8d556cbfaf29
+
+// START OF PROMPT //
+// Let's create a java class. Here are the details:
+
+// - Design and implement a class called "Point" that represents a location in the Cartesian plane.
+// - Include (at a minimum) the following methods:
+
+// 1. A constructor that taxes "x" and "y" coordinates as double arguments.
+// 2. setX(double x), setY(double y) - standard setters
+// 3. getX(), getY() - standard getters
+// 4. setPoint(double x, double y) - set the coordinates of the point.
+// 5. shiftX(double n), shiftY(double n) - shift a point by a given amount along one of the axes.
+// 6. distance(Point p2) finds the distance between to point p2.
+// 7. rotate(double angle) - rotates the point by a specified (radian) angle around the origin. The formula operates as follows:
+
+// x' = xcos(theta) - ysin(theta)
+// y' = xsin(theta) + ycos(theta)
+// END OF PROMPT //
+
 public class Point {
     private double x;
     private double y;
@@ -45,7 +66,7 @@ public class Point {
         this.y += n;
     }
 
-    // Find the distance between two points
+    // Find the distance between two points using Pythagorean theorem
     public double distance(Point p2) {
         double dx = p2.getX() - this.x;
         double dy = p2.getY() - this.y;
