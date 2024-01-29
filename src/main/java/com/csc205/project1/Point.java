@@ -27,16 +27,16 @@ public class Point {
     private double x;
     private double y;
 
-    // Constructor
-    public Point(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
     // Default constructor
     public Point() {
         this.x = 0.0;
         this.y = 0.0;
+    }
+
+    // Constructor
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
     }
 
     // Standard setters
@@ -87,7 +87,7 @@ public class Point {
         y = newY;
     }
 
-    // Testing the Point class
+    // Main method for testing Point class
     public static void main(String[] args) {
         Point point1 = new Point(1.0, 2.0);
         System.out.println("Original Point: (" + point1.getX() + ", " + point1.getY() + ")");
@@ -107,8 +107,11 @@ public class Point {
         point1.rotate(Math.PI / 2); // Rotating by 90 degrees
         System.out.println("Rotated Point: (" + point1.getX() + ", " + point1.getY() + ")");
 
-        Point point3 = new Point();
+        Point point3 = new Point(); // Testing point (0, 0)
         System.out.println("Original Point: (" + point3.getX() + ", " + point3.getY() + ")");
+
+        point3.rotate(Math.PI / 3);
+        System.out.println("Rotated Point: (" + point3.getX() + ", " + point3.getY() + ")");
     }
 }
 
