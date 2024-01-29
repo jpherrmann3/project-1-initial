@@ -2,7 +2,7 @@ package com.csc205.project1;
 
 import java.lang.Math;
 
-// Leveraging OpenAI for code completion.
+// Leveraging OpenAI (ChatGPT) for code completion.
 // Link to the chat log: https://chat.openai.com/share/9f89fb0d-e6a1-4aa6-b1cd-8d556cbfaf29
 
 // START OF PROMPT //
@@ -23,6 +23,7 @@ import java.lang.Math;
 // y' = xsin(theta) + ycos(theta)
 // END OF PROMPT //
 
+// A representation of a Point on a Cartesian plane
 public class Point {
     private double x;
     private double y;
@@ -87,7 +88,7 @@ public class Point {
         y = newY;
     }
 
-    // Main method for testing Point class
+    // Main method for testing Point class outside of Unit Tests
     public static void main(String[] args) {
         Point point1 = new Point(1.0, 2.0);
         System.out.println("Original Point: (" + point1.getX() + ", " + point1.getY() + ")");
