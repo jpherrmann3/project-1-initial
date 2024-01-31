@@ -86,6 +86,14 @@ public class Point {
         y = newY;
     }
 
+    // Override for toString method
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("(").append(x).append(", ").append(y).append(")");
+        return sb.toString();
+    }
+
     // Main method for testing Point class outside of Unit Tests
     public static void main(String[] args) {
         Point point1 = new Point(1.0, 2.0);
@@ -111,6 +119,10 @@ public class Point {
 
         point3.rotate(Math.PI / 3);
         System.out.println("Rotated Point: (" + point3.getX() + ", " + point3.getY() + ")");
+
+        System.out.println(point1);
+        System.out.println(point2);
+        System.out.println(point3);
     }
 }
 
