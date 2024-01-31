@@ -1,7 +1,5 @@
 package com.csc205.project1;
 
-import java.lang.Math;
-
 // Leveraging OpenAI (ChatGPT) for code completion.
 // Link to the chat log: https://chat.openai.com/share/9f89fb0d-e6a1-4aa6-b1cd-8d556cbfaf29
 
